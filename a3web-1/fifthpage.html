@@ -1,0 +1,191 @@
+<!DOCTYPE html><!--Julie's code starts here --> 
+<html lang=en>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--https://www.w3schools.com/html/html_responsive.asp-->
+        <!--Starting to try and figure out responsive websites-->
+    
+        <meta charset=utf-8>
+        <link rel="stylesheet" href="Styling.css"> <!--Link to stylesheet-->
+        <title> Contact Us! </title>
+        <!-- Julie's Code ends here -->
+        <!--*Owner:Alanah Reveler-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--For icons-->
+        <script src="script.js"></script>  <!--Link to javascript-->
+        <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script> <!--For icons-->
+        <!--End Owner:Alanah Reveler-->
+    </head>
+    <body>
+         <!--
+        * Owner : Laura Cobham (navbar links to different pages)
+        * From : https://www.w3schools.com/colors/colors_palettes.asp
+         -->
+        <div class="navbar" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="secondpage.html">Meet The Team</a>
+	  <div class="dropdown">
+	    <button class="dropbtn">What We Offer
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="thirdpage.html">Cartography</a>
+	      <a href="fourthpage.html">Applications</a>
+	    </div>
+	  </div> 
+	  <a class="active" href="fifthpage.html">Contact Us</a>
+	<!-- End Owner : Laura Cobham-->
+	<!--
+	*Owner:Alanah Reveler
+	*Linking navbar to javascript
+	*From:https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+	-->
+        <a href="javascript:void(0);" class="icon" onclick="Navbar()">
+        <i class="fa fa-bars"></i></a>
+	</div>
+        <!--End Owner:Alanah Reveler-->
+	<!-- 
+	*Owner: Laura Cobham (relative links within same page)
+	-->
+	<hr>
+	<a href="#ContactHeading" class="buttons">Contact Us</a>
+	<a href="#CustomerReviews" class="buttons">Customer Reviews</a>
+	<a href="#Location" class="buttons">Location</a>
+	<hr>
+	<!-- End Owner: Laura Cobham -->
+        <!--Julie's code starts here -->
+        <div id=heading> 
+            <h1>Get in Touch</h1>
+            <h2>How can we help?</h2>
+        </div>
+        <!-- Julie's Code ends here -->
+         
+        <!--
+        * Owner : Jordan Steinman (creating the contact us form)
+        * From : https://www.w3schools.com/html/html_forms.asp and https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_textarea
+         -->
+    <div>
+    <hr>
+	<h3 id="ContactHeading"> Contact Us </h3>
+    <hr>
+        <div id="contactform">
+            <div id="formbox">
+                <form>
+                    <label for="visitorname">Name:</label>
+                    <input type="text" id="visitorname" name="visitorname" placeholder="Enter your name...">
+                    
+                    <label for="visitoremail">Email:</label>
+                    <input type="text" id="visitoremail" name="visitoremail" placeholder="Enter your email...">
+                    
+                    <label>Reason for contacting:</label>
+                    
+                    <div id="allreasons">
+                        <!-- inputs nested into labels to keep text with input since css display:inline with div would not override, idea from
+                        https://forum.freecodecamp.org/t/need-helps-how-to-put-input-and-label-on-the-same-line-using-flex-for-survey-form/497904/5 -->
+                        <label for="inquiry">
+                        <input type="radio" id="inquiry" name="contactreason" value="General inquiry">
+                        General inquiry</label>
+                        <label for="compliments">
+                        <input type="radio" id="compliments" name="contactreason" value="Compliments">
+                        Compliments</label>
+                        <label for="complaints">
+                        <input type="radio" id="complaints" name="contactreason" value="Complaints">
+                        Complaints</label>
+                        <label for="other">
+                        <input type="radio" id="other" name="contactreason" value="Other">
+                        Other</label>
+                    </div>
+        
+                    <label for="messagebox">Please type your message below:</label>
+                    <textarea id="messagebox" name="messagebox" rows="10" placeholder="Write your comment here..."></textarea>
+                </form>
+            </div>
+            <p id="submittext"> Hit submit when finished writing! </p>
+            <button class="submitbutton" type="button" onclick="submitalert()">Submit</button>
+        </div>
+	</div>
+    <hr>
+	<h3 id="CustomerReviews">Customer Reviews</h3>
+    <hr>
+    <!-- End Owner: Jordan Steinman -->
+
+        <!--
+	*Owner:Alanah Reveler
+	*Reviews with accordion-style drop-downs
+	*From:https://www.w3schools.com/howto/howto_js_accordion.asp
+	-->
+	<div>
+            <button onclick="Accordion('review1')" class="accordion"><i class ='fas fa-star'></i><i class ='fas fa-star'></i><i class='fas fa-star'></i><i class ='fas fa-star'></i><i class ='fas fa-star'></i></button>
+            <div id="review1" class="hide">
+                <p>Amazing experience! I loved the map I got done for a great price! –Anonymous</p>
+            </div>
+	</div>
+	<div>
+            <button onclick="Accordion('review2')" class="accordion"><i class ='fas fa-star'></i><i class ='fas fa-star'></i><i class='fas fa-star'></i><i class ='fas fa-star'></i><i class ='fas fa-star'></i></button>
+		<div id="review2" class="hide">
+			<p>They make incredible websites and databases! –Shawn </p>
+		</div>
+	</div>
+			
+	<div>
+            <button onclick="Accordion('review3')" class="accordion"><i class ='fas fa-star'></i><i class ='far fa-star'></i><i class='far fa-star'></i><i class ='far fa-star'></i><i class ='far fa-star'></i></button>
+		<div id="review3" class="hide">
+			<p>They tried their best and that’s what matters -Anonymous</p>
+		</div>
+	</div>
+        <!--End Owner:Alanah Reveler-->
+
+    	<!--
+        * Owner : Jordan Steinman (headings)
+         -->
+            <hr>
+            <h3 id="Location"> Location </h3>
+            <hr>
+    	<!-- End Owner: Jordan Steinman -->
+
+         <!--Julie's Code Starts here Dec 1, 2023-->
+        <div id="OSMap">
+			
+                <img class='staticMap' src="https://maps.googleapis.com/maps/api/staticmap?center=44.350220%20-78.740030&zoom=11&size=600x375&maptype=roadmap&key=AIzaSyD1Tk0KkDWUvFEaVfc79DU9C4dk5x-CjwI" alt="Map of Lindsay Ontario">
+            
+			<div class="mapINFO">
+                <h3>We are based in the beautiful Kawartha Lakes</h3>
+                <p>Thanks to the power of online work, distance is no obstacle. Ut vehicula felis arcu, vel auctor magna facilisis eu. 
+				Sed cursus lectus diam, at cursus tellus varius sed. Orci varius natoque penatibus et magnis dis parturient montes, 
+				nascetur ridiculus mus. Morbi scelerisque nulla sem, sit amet ullamcorper orci egestas sit amet. Integer nisi diam, 
+				tristique non tempus nec, rutrum rutrum sapien. Donec ac cursus mauris, vel egestas odio. Maecenas lorem dolor, 
+				mollis vel justo non, lobortis aliquet eros. </p>  <!-- Sourced from https://www.lipsum.com/feed/html-->
+            </div>
+
+            <div id="MapClear"></div>
+        </div>
+        <hr>
+        <!--Julie's Code Ends here-->
+      <!--
+	*Owner:Alanah Reveler
+	*HTML for back-to-top button
+	*From: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+     <div>
+        <button onclick="topFunction()" id="topbutton" class="hide" title="Top">Top</button>
+     </div> 
+     <!--End Owner:Alanah Reveler-->  
+    <!--
+    - Owner : Alison Cooke
+    - From : https://www.w3schools.com/tags/tag_footer.asp
+    -->
+    <footer>
+        
+        <p> 
+        Address: 456 Sesame Street, Hairy Hills AB,T0B 1S0
+        </p>
+        <p> Call us at 867-5309</p>
+        <p> 
+        <a class= "contactbut" href="./fifthpage.html" > Contact us here
+        </a>
+        <!--this is made into a relative link becasue it is referenceing to the same website just on a differnt page,https://www.w3schools.com/html/html_links.asp-->
+        </p>
+        <p>
+        TM & Copywrite 2023 Odder Solutions. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+    <!-- ***End Owner : Alison Cooke*** -->
+</html>

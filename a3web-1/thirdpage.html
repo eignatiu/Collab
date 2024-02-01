@@ -1,0 +1,119 @@
+<!DOCTYPE html><!--Julie's code starts here --> 
+<html lang=en>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--https://www.w3schools.com/html/html_responsive.asp-->
+      <!--statement to allow responsive websites-->
+        <meta charset=utf-8>
+        <link rel="stylesheet" href="Styling.css"> <!--Link to stylesheet-->
+        <title> OS-Cart Experience </title>
+        <!-- Julie's Code ends here -->
+        <!--*Owner:Alanah Reveler-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--icon for navbar button-->
+        <script src="script.js"></script> <!--Link to javascript-->
+    </head>
+    <body>
+	 <!--Owner End:Alanah Reveler-->
+         <!--
+        * Owner : Laura Cobham (navbar links to different pages)
+        * From : https://www.w3schools.com/colors/colors_palettes.asp
+         -->
+        <div class="navbar" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="secondpage.html">Meet The Team</a>
+	  <div class="dropdown">
+	    <button class="dropbtn">What We Offer
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a class="active" href="thirdpage.html">Cartography</a>
+	      <a href="fourthpage.html">Applications</a>
+	    </div>
+	  </div> 
+	  <a href="fifthpage.html">Contact Us</a>
+	<!-- End Owner: Laura Cobham --> 
+	<!--
+	*Owner:Alanah Reveler 
+	*Linking javascript to navbar	
+        *From:https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+	-->
+        <a href="javascript:void(0);" class="icon" onclick="Navbar()">
+        <i class="fa fa-bars"></i></a>
+        <!--Owner End:Alanah Reveler-->
+	<!--
+        * Owner : Laura Cobham (relative links within same page)
+        * From : https://www.w3schools.com/colors/colors_palettes.asp
+         -->
+	</div>
+	<hr>
+	<a href="#SpatialAnalysis" class="buttons">Spatial Analysis</a>
+	<a href="#Geovisualization" class="buttons">Geovisualization</a>
+	<hr>
+	<!-- End Owner: Laura Cobham --> 
+	    
+        <!--Julie's code starts here 
+	    Heading and Spatial Analysis Page-->
+        <div id=heading> 
+            <h1>Cartography</h1>
+            <h2>Spatial Analysis, Geovisualization</h2>
+        </div>
+        <hr>
+    		<h3 id="SpatialAnalysis"> Spatial Analysis </h3> 
+        <hr>
+            <div class="cartsection" id="SpatialPage">  <!-- Create div to contain all relevant information -->
+              <img class= "cartimg" src= "imagegallery/SpatialExampleJM.JPG"  alt="Spatial Analysis of Amenities in Thunder Bay Ontario">
+              <div class="carttext"><h3> Spatial Analysis is all around us, contact us!</h3> 
+                <ul class="spatialList"> 
+                  <li> Site Suitability analysis </li> 
+                  <li> Environmental assessments for building proposals</li> 
+                  <li> Mapping global pandemics.</li> 
+                </ul> 
+              </div>
+            </div>
+            <div></div>    <!-- Div stops the components from overlapping -->
+        <!-- Julie's Code ends here -->
+	    
+        <!--  Alisons code starts here -->
+    	  <hr>     
+    		<h3 id="Geovisualization"> Geovisualization </h3>
+        <hr>   
+            <div class="cartsection">
+            <img class= "cartimg" src= "imagegallery/GVITF2GreyscaleMap2.jpg" alt="example of Geovisualization">
+            <div class="carttext">
+              <p>Geovisualization is the art of symbolizing and classifying map elements. Our team has been trained rigorously in 
+                geovisualization and have a complete understanding of the program ArcGIS, understanding the use of symbology to create a visual 
+                documentation of map elements. </p></div>
+            </div>
+            <div></div>   
+        <hr>
+	<!-- Alison's code ends here -->
+	    
+	<!--
+	*Owner:Alanah Reveler
+	*HTML for back to top button    
+     	*From: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+	-->
+     		<div>
+       		 <button onclick="topFunction()" id="topbutton" class="hide" title="Top">Top</button>
+     		</div> 
+     	<!--Owner Ends:Alanah Reveler--> 
+    <!--
+    - Owner : Alison Cooke
+    - From : https://www.w3schools.com/tags/tag_footer.asp
+    -->
+    <footer>
+        <p> 
+        Address: 456 Sesame Street, Hairy Hills AB,T0B 1S0
+        </p>
+        <p> Call us at 867-5309</p>
+        <p>
+        <a class= "contactbut" href="./fifthpage.html" > Contact us here
+        </a>
+        <!--this is made into a relative link becasue it is referencing to the same website just on a differnt page,https://www.w3schools.com/html/html_links.asp-->
+        </p>
+        <p>
+          TM & Copywrite 2023 Odder Solutions. All Rights Reserved.
+          </p>
+    <!-- ***End Owner : Alison Cooke*** -->
+    </footer>
+    </body>
+</html>

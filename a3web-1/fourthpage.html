@@ -1,0 +1,150 @@
+<!DOCTYPE html><!--Julie's code starts here --> 
+<html lang=en>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--https://www.w3schools.com/html/html_responsive.asp-->
+        <!--Starting to try and figure out responsive websites-->
+    
+        <meta charset=utf-8>
+        <link rel="stylesheet" href="Styling.css"> <!--Link to stylesheet-->
+        <title> OS-App Experience</title>
+        <!-- Julie's Code ends here -->
+        <!--Owner: Alanah Reveler-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icon for navbar button-->
+        <script src="script.js"></script>  <!--Link to javascript-->
+        <!--End Owner:Alanah Reveler-->
+     <!--
+        * Owner : Laura Cobham (navbar links to different pages)
+        * From : https://www.w3schools.com/colors/colors_palettes.asp
+     -->
+    </head>
+    <body>
+	    
+        <div class="navbar" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="secondpage.html">Meet The Team</a>
+	  <div class="dropdown">
+	    <button class="dropbtn">What We Offer
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+	      <a href="thirdpage.html">Cartography</a>
+	      <a class="active" href="fourthpage.html">Applications</a>
+	    </div>
+	  </div> 
+	  <a href="fifthpage.html">Contact Us</a>
+	<!-- End Owner: Laura Cobham -->
+	<!--Owner:Alanah Reveler-->
+        <!--Inspired from:https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+        <a href="javascript:void(0);" class="icon" onclick="Navbar()">
+        <i class="fa fa-bars"></i></a>
+	</div>
+        <!--End Owner:Alanah Reveler-->
+
+        <!--
+        * Owner : Jordan Steinman (section buttons)
+        -->
+        <hr>
+        <a href="#GISDatabase" class="buttons">GIS Database</a>
+        <a href="#WebDesign" class="buttons">Web Design</a>
+        <a href="#Python" class="buttons">Python</a>
+        <hr>
+        <!-- End Owner: Jordan Steinman -->
+        <!--Julie's code starts here -->
+        <div id=heading> 
+            <h1>Applications</h1>
+            <h2>Remote Sensing, Python, SQL, and HTML</h2>
+        </div>
+        <!-- Julie's Code ends here -->
+        <!--Owner:Alanah Reveler-->
+        <hr>
+        <h3 id="GISDatabase"> GIS Database </h3>
+        <hr>
+        <div id='databaseSECTION'>
+            <img id='databaseIMAGE' src="imagegallery/databasemodel.JPG" alt="Model of Tree Survey Database">
+            <div id='databaseINFO'>
+                <p>At Odder Solutions we apply principles and techniques of database design and 
+                    processing specializing in a GIS environment. We display strong skills in 
+                    designing, implementing, and managing databases using desktop and mobile devices. 
+                    As well as using Structured Query Language (SQL) to build databases and manipulate
+                     data for future work in data processing, GIS analysis, and cartographic presentation. </p>
+                <p>One database service we offer is designing a survey using Survey123. Our Survey123 services include
+			meeting all your data requirements with data integrity and efficiency and creating an easy-to-use 
+			survey user interface!</p>
+                <p>Another database service we offer is designing a database in Access. Our database 
+                    design service is assembling data from various sources and creating databases. 
+                    The created database will be efficient, with data cohesiveness, and no data lost! </p>
+            </div>
+        </div>
+        <!--End Owner:Alanah Reveler-->
+    		<hr>
+    		<h3 id="WebDesign"> Web Design and Programming </h3>
+    		<hr>
+    <!-- * Owner : Laura Cobham (web design section content)-->
+        <div id='webSECTION'>
+	<img id='webIMAGE' src="imagegallery/webcode.png" alt="Screenshot of webpage HTML code">
+	<div id='webINFO'>
+		<p>As part of our commitment to a great customer experience, Odder Solutions recognizes how important a good website is. Whether you are an individual or organization, 
+			we have a skilled team that is experienced in static maps, HTML, CSS, Javascript, and JQuery. These skills allow us to present the best possible image for our customers to the public. </p>
+		<p>We provide one-on-one consultations on what you are looking for on your webpage, then building your code from scratch and offering any revisions in the process. </p>
+		<p>Another one of our web services includes ensuring zero errors or warnings on your webpage so that any visitor to your site can easily find what they are looking for! Your final website will be aesthetically pleasing, error-free, and easy to navigate!</p>
+	</div>
+    </div>
+        <!-- End Owner: Laura Cobham -->
+
+    <!--
+        * Owner : Jordan Steinman (python section)
+     -->
+        <hr>	
+	      <h3 id="Python"> Python Coding </h3>
+    		<hr>
+
+        <div id='pythonSECTION'>
+          <img id='pythonIMAGE' src="imagegallery/Python.jpg" alt="Field calculation in ArcGIS Pro using python">
+          <div id='pythonINFO'>
+              <p>Coding with python is around you probably more than is known. It can be used in many different applications,
+                but the main one we specialize in is coding for ArcGIS Pro. 
+              </p>
+              <p>"Coding with python can look daunting, but here at Odder Solutions, we got you covered." - Odder Solutions Team
+              </p>
+              <p>The photo shown is the creation of an expression and query being used to calculate the field called "ValidDate"
+                on the right side. In the expression, there is a combination of splitting the original data, comparing the years
+                in "yearBuilt" and "CompDate", checking if the month has a day that does not exceed its maximum, and an if else
+                statement to check these conditions.
+              </p>
+          </div>
+        </div>
+        <hr>
+    	<!-- End Owner: Jordan Steinman -->
+    <!--
+	*Owner: Alanah Reveler
+	*HTML for back-to-top button
+	*https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+     -->
+     <div>
+        <button onclick="topFunction()" id="topbutton" class="hide" title="Top">Top</button>
+     </div> 
+     <!--End Owner:Alanah Reveler-->  
+     <!--
+    - Owner : Alison Cooke
+    - From : https://www.w3schools.com/tags/tag_footer.asp
+    -->  
+ <footer>
+        
+        <p> 
+        Address: 456 Sesame Street, Hairy Hills AB,T0B 1S0
+        </p>
+        <p> Call us at 867-5309</p>
+        <p>  
+        <a class= "contactbut" href="./fifthpage.html" > Contact us here!
+        </a>
+        <!--this is made into a relative link becasue it is referenceing to the same website just on a differnt page,https://www.w3schools.com/html/html_links.asp-->
+        </p>
+        <p>
+          TM & Copywrite 2023 Odder Solutions. All Rights Reserved.
+        </p>
+    </footer>
+    <!--***End Owner : Alison Cooke*** -->
+    </body>
+   
+</html>
