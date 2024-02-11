@@ -1,6 +1,9 @@
 <!DOCTYPE html><!--Julie's code starts here --> 
 <html lang=en>
     <head>
+      <meta name="description" content="Odder Solutions Consultation Website">
+      <meta name="Keywords"  content="GIS, Accessability, CSS, HTML, GEOM 107">
+      <meta name="Author" contents="Alison Cooke">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--https://www.w3schools.com/html/html_responsive.asp-->
       <!--statement to allow responsive websites-->
         <meta charset=utf-8>
@@ -12,6 +15,7 @@
         <script src="script.js"></script> <!--Link to javascript-->
     </head>
     <body>
+      <div class="whole">
 	 <!--Owner End:Alanah Reveler-->
          <!--
         * Owner : Laura Cobham (navbar links to different pages)
@@ -56,12 +60,12 @@
             <h1>Cartography</h1>
             <h2>Spatial Analysis, Geovisualization</h2>
         </div>
-        <hr>
-    		<h3 id="SpatialAnalysis"> Spatial Analysis </h3> 
-        <hr>
-            <div class="cartsection" id="SpatialPage">  <!-- Create div to contain all relevant information -->
+        
+    		<h3 id="SpatialAnalysis" class="subh3"> Spatial Analysis </h3> 
+        
+            <div class="cartsection" >  <!--Create div to contain all relevant information-->
               <img class= "cartimg" src= "imagegallery/SpatialExampleJM.JPG"  alt="Spatial Analysis of Amenities in Thunder Bay Ontario">
-              <div class="carttext"><h3> Spatial Analysis is all around us, contact us!</h3> 
+              <div class="carttext"><h3 class="subh3"> Spatial Analysis is all around us, contact us!</h3> 
                 <ul class="spatialList"> 
                   <li> Site Suitability analysis </li> 
                   <li> Environmental assessments for building proposals</li> 
@@ -73,9 +77,9 @@
         <!-- Julie's Code ends here -->
 	    
         <!--  Alisons code starts here -->
-    	  <hr>     
-    		<h3 id="Geovisualization"> Geovisualization </h3>
-        <hr>   
+    	      
+    		<h3 id="Geovisualization" class="subh3"> Geovisualization </h3>
+          
             <div class="cartsection">
             <img class= "cartimg" src= "imagegallery/GVITF2GreyscaleMap2.jpg" alt="example of Geovisualization">
             <div class="carttext">
@@ -84,7 +88,7 @@
                 documentation of map elements. </p></div>
             </div>
             <div></div>   
-        <hr>
+        
 	<!-- Alison's code ends here -->
 	    
 	<!--
@@ -115,5 +119,6 @@
           </p>
     <!-- ***End Owner : Alison Cooke*** -->
     </footer>
+      </div>
     </body>
 </html>
