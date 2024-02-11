@@ -12,17 +12,47 @@
     * {font-family: "Century Gothic" ;}
 
 /* Element specific formating */
-    h1 {text-align: center; color: #fff}
+    h1 {font-size: 60px;
+      text-align: center; 
+      color: white; 
+      text-transform: uppercase;
+      letter-spacing: 5px;}
     h2 {text-align: center; 
       font-family: "Century Gothic"; 
-      color: #fff;
-    font-style:italic}
-    body {background-color: #8d9db6;}
-    p {color: #fff; padding:  0px  20px  0px}
+      color: white;
+      font-style:italic}
+    body {background-color: rgb(35, 33, 33);
+      margin-top:50px;
+      margin-bottom: 40px;
+     margin-left: 50px;
+      margin-right: 50px; }
+    p {color: rgb(35, 33, 33); 
+      font-weight: bold;
+      padding:  0px  20px  0px}
+    .subhead{margin: auto; 
+      background-color: #f57c319a;
+      /* width: 1200px; */
+      border-radius: 10px;
+      padding: 1px; 
+    margin-top: 100px}
+    .subhead2{margin: auto; 
+      background-color: #ecb3399c;
+      /* width: 1200px; */
+      border-radius: 10px;
+      padding: 10px; 
+    margin-top: 100px;
+  margin-bottom: 40px}
 
 /* id selectors */
-    #heading { background-color: #667292;padding-top: 32px;
-        padding-bottom: 32px; margin-top: 50px}
+    #heading { background-color: #e65a9d;
+      padding-top: 32px;
+        padding-bottom: 32px;
+         margin-top: 50px;
+        border-radius: 25px }
+
+ .whole{background-color: white;
+  border-radius: 5px;
+padding: 20px}     
 /* Julies Code Ends here */
 
 /**********************
@@ -32,20 +62,20 @@
 /* This section styles the navbar and the dropdown menu within it
 Dropdown navbar learnt from:https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp */
 .navbar {
-  background-color: #667292;
+  background-color: rgb(35, 33, 33);
   overflow: auto;
 }
 .navbar a {
   float: left;
   font-size: 20px;
-  color: #f1e3dd;
+  color: white;
   text-align: center;
   text-decoration: none;
   padding: 15px 30px;
-  background-color: #667292;
+  background-color: rgb(35, 33, 33);
 }
 .navbar a.active {
-background-color: #383f52;
+background-color: rgb(35, 33, 33);
 }
 .dropdown {
   float: left;
@@ -55,17 +85,17 @@ background-color: #383f52;
   font-size: 20px;  
   border: none;
   outline: none;
-  color: #f1e3dd;
+  color: white;
   padding: 15px 30px;
-  background-color: #667292;
+  background-color:  rgb(35, 33, 33);
   margin: 0;
   overflow: hidden;
 }
 .navbar a:hover {
-  background-color: #bccad6;
+  background-color: #795ef0cb;
 }
 .dropdown:hover .dropbtn:hover {
-  background-color: #8d9db6;
+  background-color: #795ef0cb;
 }
 .dropdown-content {
   display: none;
@@ -74,23 +104,28 @@ background-color: #383f52;
 }
 .dropdown-content a {
   float: none;
-  color: #f1e3dd;
+  color: white;
   padding: 15px 30px;
   text-decoration: none;
   display: block;
   text-align: left;
-  background-color: #383f52;
+  background-color:  rgb(35, 33, 33);
 }
 .dropdown-content a:hover {
-  background-color: #bccad6;
+  background-color: #795ef0cb;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
 /* Scrolling image gallery learnt from: https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
 div.scrollimagegallery {
-  background-color: #8d9db6;
-  padding: 0px;
+ 
+  background-color: #f57c319a;
+  border-radius: 25px;
+  padding: 12px;
+  margin-bottom:20px;
+  margin: auto;
+  
   overflow: auto;
   white-space: nowrap;
 }
@@ -101,51 +136,58 @@ div.scrollimagegallery img {
 /* Editing scrollbar properties learnt from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
 /* Styling of scrollbar size */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 15px;
 }
 /* Colour of bar behind scrolling part */
 ::-webkit-scrollbar-track {
-  background: #bccad6; 
+  background: white; 
 }
  /* Colour of scrolling part of bar */
 ::-webkit-scrollbar-thumb {
-  background: #667292; 
+  background: #795ef0cb; 
 }
 /* Table styling learned from: https://www.w3schools.com/css/css_table.asp */
 #services {
   font-family: Century Gothic;
-  border-collapse: collapse;
+  
   width: 100%;
 }
-#services td, #services th {
-  border: 5px solid #f1e3dd;
-  padding: 8px;
-  color: white;
+#services td{
+  border: 8px solid #4571e2;
+  border-radius:10px;
+  padding: 10px;
+  color: rgb(35, 33, 33);
+  background-color: #9db8ff
 }
 /* Styling every other row */
-#services tr:nth-child(even){
+/* #services tr:nth-child(even){
   background-color: #8d9db6;
   font-size: 15px;
-}
-#services tr:nth-child(odd){
+} */
+/* #services tr:nth-child(odd){
   background-color: #667292;
-  font-size: 15px;
-}
+  font-size: 15px; 
+ } */
 #services th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  border: 8px solid #4571e2;
+  border-radius:10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: left;
   text-decoration: underline;
-  color: #f1e3dd;
+  color: rgb(35, 33, 33);
   font-size: 18px;
 }
+#headtable{background-color: #648fff}
 /*Applications page, styling web section (image and text), making responsive*/
 #webSECTION{
 	align-items:center;
 	display:block;
 	max-height:1500px;
-	background-color: #667292;
-}
+	background-color: #8f79f29a;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px}
 #webINFO{
 	min-width:30%;
 	float: none;
@@ -159,21 +201,33 @@ div.scrollimagegallery img {
 }
 /*Styling relative nav buttons*/
 .buttons {
-	color: #f1e3dd;
+	color: rgb(35, 33, 33);
 	font-weight: bold;
 	font-size: 28px;
 	margin-right: 30px;
+  margin-top:30px;
 	text-decoration: none
 }
 /* End Owner : Laura Cobham*/
 
 /* Jordan's Code Starts Here */
 /* page sub headings*/
-h3 {color: #fff;
+h3 {color: rgb(56, 53, 53);
 	letter-spacing: 1px;
-	font-weight: normal;
+	font-weight: bold;
 	text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
 }
+
+
+.subh3 {color: rgb(35, 33, 33);
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+margin-top:40px}
 
 /*Formatting for Python section*/
 #pythonSECTION{
@@ -233,7 +287,7 @@ input[type=text], textarea {
 	text-align: center;
 	justify-content: center;
 	border-radius: 8px;
-	background-color: #f1e3dd;
+	background-color: #9db9ffd9;
 	display: block;
 	padding-bottom: 20px;
 	padding-top: 20px;
@@ -247,18 +301,20 @@ input[type=text], textarea {
 }
 
 #submittext {
-  color: black;
+  color: rgb(35, 33, 33);
   letter-spacing: 1px;
+  
 }
 
 .submitbutton {
 	padding: 8px;
-	border: 2px solid #667292;
+	border: 2px solid #648fff;
+  font-weight: bold;
 }
 
 .submitbutton:hover {
-	background-color: #667292;
-	color: #f1e3dd;
+	background-color: #648fff;
+	color: white;
 }
 
 /* Jordan's Code Ends Here */
@@ -270,8 +326,11 @@ input[type=text], textarea {
 	https://stackoverflow.com/questions/489340/vertically-align-text-next-to-an-image 
 ***********************/
 
-	#OSMap {width:100%; background-image: linear-gradient(rgb(198, 101, 101), rgb(235, 164, 189)); /* ID OSmap is on fifthpage */
+	#OSMap {width:100%; background-color: #ecb3399c; /* ID OSmap is on fifthpage */
 	  display: flex;
+    padding: 10px;
+    border-radius: 8px;
+  
 				align-items: center; max-height: 600px }  /*defines the div, containing an image and a text element, with dimensions, alligns items and adds a background colour */
 
 
@@ -280,8 +339,10 @@ input[type=text], textarea {
 	.staticMap {width: 50%; float: left; max-width: 100%;}  	/*Class staticMap is on fifthpage, Sets image to display on the left of the page*/
 
     
-#SpatialPage {background-color: #383f52}		/*ID SpatialPage is on thirdpage.html*/
-.spatialList {color: white}				/*Class spatialList is on thirdpage.html*/
+#SpatialPage {background-color:#9db8ff}		/*ID SpatialPage is on thirdpage.html*/
+.spatialList {color: rgb(35, 33, 33);
+font-size: 18px;
+font-weight: bold;}				/*Class spatialList is on thirdpage.html*/
 
 #SpatialIMG{max-width:576px; max-height: 381px;
 }
@@ -296,82 +357,123 @@ input[type=text], textarea {
 **************************************************************************************************/
 footer {text-align: center;/* aligns text to the center of the page */
 	font-size: 14pt;
-   padding: 10px; /* adding padding to the content bock */
-	background-color: #667292;
+  padding: 10px; /* adding padding to the content bock */
+	background-color: #e65a9d;
+  border-radius: 25px;
 	color: white; 
   clear: both;/* clears both sides of the block from floating blocks */
-	}
+	margin-top:50px}
 p {font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	}/* the font family fot the webpagecetury gothic becasue it is sans-serif and easily distinguished */
-.resumeblock{background-color: #667292;
+.resumeblock{background-color: #8068ed94;
   border-radius: 25px;}
-.resumes {color: #f1e3dd; /* style for the headers on the page separate style from other headers (h3) */
+.resumes {color: rgb(35, 33, 33); /* style for the headers on the page separate style from other headers (h3) */
   font-size:25px;/* larger font size */
-	letter-spacing: 1px;
-	font-weight: normal;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center; /* centered on the page */
+}
+.resumes2 {color: rgb(56, 53, 53); /* style for the headers on the page separate style from other headers (h3) */
+  font-size:25px;/* larger font size */
+	letter-spacing: 2px;
+	font-weight: bold;
 	text-align: center; /* centered on the page */
 }
 
 
 .res:link, .res:visited { /* setting the buttons for the resume links so they change color when they have been clicked and when the mouse hoovers over them */
-  background-color: #f1e3dd;
-  color: #667292;
-  border: 2px solid #667292;
+  background-color: rgb(35, 33, 33);
+  color: white;
+  border: 2px solid rgb(35, 33, 33);
   border-radius: 25px; /* taken from w3schools https://www.w3schools.com/css/css3_borders.asp*/
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  text-transform: uppercase;
+  
   
 }
   
 .res:hover, .res:active { /* mouse hovering changes the color of both the background and the text */
-  background-color: #667292;
-  color: #f1e3dd;
+  background-color: #ecb339;
+  color: rgb(35, 33, 33);
+  font-weight: bold;
 }
 .resp {font-size: 20px; /* class for the paragraphs style for the resume paeg separated from the rest of the font styles */
 text-align: center;
 padding-left: 100px; /* added padding to better suit the style of the page */
 padding-right: 100px;
 }
+
+.resp2 {font-size: 20px; /* class for the paragraphs style for the resume paeg separated from the rest of the font styles */
+  text-align: center;
+  padding-left: 100px; /* added padding to better suit the style of the page */
+  padding-right: 100px;
+color:rgb(56, 53, 53)}
 .resimg {
   display: block;
   margin-left:auto;/* making the margins in the left and right of the image auto fit to the page */
   margin-right:auto;
   width: 200px;
   height: 191px;
-  outline-style: groove; /* added outline to image to better indicate there is a link attached to the image */
-  outline-width: thick;
+  /* outline-style: groove; /* added outline to image to better indicate there is a link attached to the image */
+  /*outline-width: thick;
   outline-offset:10px; /* making outline more evident to draw attention to the image and the text bellow */
-  outline-color: #ffffff;
+  /*outline-color: rgb(35, 33, 33); */
 }
-
+.resimg2 {
+  display: block;
+  margin-left:auto;/* making the margins in the left and right of the image auto fit to the page */
+  margin-right:auto;
+  width: 200px;
+  height: 191px;
+  /* outline-style: groove; /* added outline to image to better indicate there is a link attached to the image */
+  /*outline-width: thick;
+  outline-offset:10px; /* making outline more evident to draw attention to the image and the text bellow */
+  /*outline-color: white; */
+}
 .imagecap {text-align:center;
-color: #f1e3dd; /* added an image caption to indicate the user can click on the image */
-font-size:12px;
+color: rgb(35, 33, 33); /* added an image caption to indicate the user can click on the image */
+font-size:14px;
 font-weight: bold;
 font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 padding-top: 20px;
 }
 
+.imagecap2 {text-align:center;
+  color: rgb(35, 33, 33); /* added an image caption to indicate the user can click on the image */
+  font-size:14px;
+  font-weight: bold;
+  font-family:"Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  padding-top: 20px;
+  }
+
 .contactbut:link, .contactbut:visited { /* contact us here button css, taken from w3schools and from my previous web design project*/
-  background-color: #667292;
+  background-color: rgb(35, 33, 33);
 
   color: white;
   padding: 14px 25px;
+  margin-top:10px;
+  margin-bottom:10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 }
 
 .contactbut:hover, .contactbut:active {
-  background-color: #f1e3dd;
-  color: black;
+  background-color: rgb(35, 33, 33);
+  color: white;
+  border: 2px solid white
 }
 
-.cartsection {width:100%; background-color: #383f52; 
+.cartsection {width:100%; background-color: #9db8ff; 
   display: flex;
-      align-items: center; max-height: 700px }
+      align-items: center;
+       max-height: 700px; 
+    border-radius: 10px;
+  padding: 10px; 
+}
 
 
   .carttext{width: 50%; float: right;}
@@ -401,20 +503,22 @@ padding-top: 20px;
 
 #topbutton {
   position: fixed; /* Fixed/sticky position */
-  bottom: 30px; /* Place the button at the bottom of the page*/
-  right: 30px; /*Place the button 30px from the right*/
+  bottom: 45px; /* Place the button at the bottom of the page*/
+  right: 60px; /*Place the button 30px from the right*/
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #667292; /* Set a background color */
-  color: #f1e3dd; /* Text color */
+  background-color:rgb(35, 33, 33); /* Set a background color */
+  color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 20px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 #topbutton:hover {
-  background-color: #bccad6; }
+  background-color:#ffb000 ;
+color: rgb(35, 33, 33);
+font-weight: bold }
 
 /*class to make button appear*/
 .top-show{
@@ -428,8 +532,8 @@ padding-top: 20px;
 
 /*accordion button inspired from https://www.w3schools.com/howto/howto_js_accordion.asp*/
 .accordion{
-  background-color: #667292;
-  color: #f1e3dd;
+  background-color: rgb(56, 53, 53);
+  color: white;
   text-align:left;
   cursor: pointer;
   padding: 20px;
@@ -439,13 +543,13 @@ padding-top: 20px;
 }
 
 .active, .accordion:hover {
-  background-color: #8d9db6;
+  background-color: #795ef0cb;
 }
 /*classes to make panel appear*/  
 	
 .panel-show {
   padding: 0 18px;
-  background-color: #bccad6;
+  background-color: #795ef08e;
   display: block;
   overflow: hidden;
   margin: 5px;
