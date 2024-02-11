@@ -1,6 +1,9 @@
 <!DOCTYPE html><!--Julie's code starts here --> 
 <html lang=en>
     <head>
+      <meta name="description" content="Odder Solutions Consultation Website">
+      <meta name="Keywords"  content="GIS, Accessability, CSS, HTML, GEOM 107">
+      <meta name="Author" contents="Alison Cooke">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--https://www.w3schools.com/html/html_responsive.asp-->
       <!--Starting to try and figure out responsive websites-->
         <meta charset=utf-8>
@@ -14,6 +17,7 @@
     </head>
 
     <body>
+      <div class="whole">
         <!--
         * Owner : Laura Cobham (navbar links to different pages)
         * From : https://www.w3schools.com/colors/colors_palettes.asp
@@ -52,8 +56,10 @@
         <!--
         *Owner: Jordan Steinman (About us column)
         -->
+        <div class="subhead">
     		<h3> About Us </h3>
-        <hr>
+     
+        
         <p>
           Formed in 2023, Odder Solutions is now one of the best new and upcoming GIS companies.
           Our team is comprised of 5 astonishing members: Alanah Reveler, Alison Cooke, Jordan 
@@ -77,10 +83,11 @@
         <p>
           P.S. Here's a fun fact about us: our company mascot is an Otter! We call him SQL.
         </p>
-
-    		<hr>
+ </div>
+    	
+        <div class="subhead2">
     		<h3> Services Offered </h3>
-        <hr>
+        
         <!-- End Owner : Jordan Steinman-->
         
 	<!--
@@ -88,7 +95,7 @@
         * From : https://www.w3schools.com/html/html_tables.asp
 	* Creating a table and filling the columns -->
 	<table id="services">
-	  <tr>
+	  <tr id="headtable">
 	    <th>Services</th>
 	    <th>Price (per hour)</th>
 	  </tr>
@@ -110,13 +117,17 @@
 	  </tr>
 	</table>
 	<!-- End Owner: Laura Cobham -->
-
+</div>
         <!--
         *Owner: Jordan Steinman (headings)
         -->
-        <hr>
-        <h3> Previous Work </h3>
-        <hr>
+        
+        <div class="subhead">
+        <h3> Previous Work </h3> 
+      
+        <p>Our team has experience creating projects in softwares like ArcGIS Pro, VisualStudioCode, AutoCAD 3D 2024, PCI Catalyst, Microsoft Access, and more!</p>
+       
+       
     	  <!-- End Owner : Jordan Steinman -->
 
         <!--
@@ -131,8 +142,7 @@
         <img src="imagegallery/AlisonGallery2.jpg" alt="ArcGISPro model built by Alison Cooke">
         <img src="imagegallery/JordanGallery2.jpg" alt="Quantitative colour map of Cambridge, ON made by Jordan Steinman">
         </div>
-
-	<p>Our team has experience creating projects in softwares like ArcGIS Pro, VisualStudioCode, AutoCAD 3D 2024, PCI Catalyst, Microsoft Access, and more!</p>
+</div>	
         <!-- End Owner : Laura Cobham-->
 
         
@@ -165,6 +175,8 @@
           TM & Copywrite 2023 Odder Solutions. All Rights Reserved.
           </p>
     </footer>
+    </div>
   </body>
+
     <!-- ***End Owner : Alison Cooke*** -->
 </html>
