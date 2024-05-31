@@ -390,11 +390,13 @@ footer {text-align: center;/* aligns text to the center of the page */
     overflow: hidden
 }
 
-  
+hr.solid {
+  border-top: 3px solid #bbb;
+}
 p {font-family:Gothom-Book, Arial, sans-serif; color:black;
 	}/* the font family fot the webpagecetury gothic becasue it is sans-serif and easily distinguished */
-.resumeblock{background-color: #8068ed94;
-  border-radius: 25px;}
+.resumeblock{background-color: #2c3d7a ;
+  ;margin-left: 20px; margin-right: 20px;}
 .resumes {color: rgb(35, 33, 33); /* style for the headers on the page separate style from other headers (h3) */
   font-size:25px;/* larger font size */
 	letter-spacing: 2px;
@@ -424,7 +426,7 @@ p {font-family:Gothom-Book, Arial, sans-serif; color:black;
 }
   
 .res:hover, .res:active { /* mouse hovering changes the color of both the background and the text */
-  background-color: #ecb339;
+  background-color: #f7941d;
   color: rgb(35, 33, 33);
   font-weight: bold;
 }
