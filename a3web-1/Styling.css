@@ -359,7 +359,10 @@ font-weight: bold;}				/*Class spatialList is on thirdpage.html*/
 }
 /* Julie's Code Ends Here */
 
-
+#viewDiv {
+  height: 500px; /* Ajusta la altura del div del mapa según sea necesario */
+  width: 100%;
+}
 
 /************************************************************************************************
 * Owner : Alison Cooke
