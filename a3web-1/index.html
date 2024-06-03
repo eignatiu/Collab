@@ -186,7 +186,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Tree Data Solution - Home</title>
+    <title>Branch-In - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Styling.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
@@ -194,14 +194,27 @@
 <body>
   
     <div class="whole">
-        <div class="navbar" id="myTopnav">
+        <!-- <div class="navbar" id="myTopnav">
             <a class="active" href="index.html">Home</a>
             <a href="Workflow.html">Workflow</a>
             <a href="Supervisor.html">Supervisor</a>
             <a href="FieldCrew.html">Field Crew</a>
             <a href="javascript:void(0);" class="icon" onclick="Navbar()" aria-label="Open menu">
                 <i class="fa fa-bars"></i>
-            </a>
+            </a> -->
+            <div class="navbar" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a class="active" href="secondpage.html">Meet The Team</a>
+              <div class="dropdown">
+                <button class="dropbtn">What We've Done
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="thirdpage.html">Objective and Solution</a>
+                  <a href="fourthpage.html">Academic Deliverables</a>
+                </div>
+              </div> 
+              <a href="fifthpage.html">Methodology</a>
         </div>
         
         <div id="heading">
@@ -266,7 +279,7 @@
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/layers/support/fetchService.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/support/arcadeUtils.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/symbols/support/previewSymbol2D.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/Popup.js"></script>
+    <script type="moduel" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/Popup.js"></script>
     <script src="https://js.arcgis.com/4.28/"></script>
     <script src="script.js"></script>
 
