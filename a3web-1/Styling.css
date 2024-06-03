@@ -27,7 +27,7 @@
       margin-bottom: 40px;
      margin-left: 50px;
       margin-right: 50px; */}
-    p {color: rgb(35, 33, 33); 
+    p {/*color: rgb(35, 33, 33);*/ 
       font-weight: bold;
       padding:  0px  20px  0px}
     .subhead{margin: auto; 
@@ -370,7 +370,7 @@ font-weight: bold;}				/*Class spatialList is on thirdpage.html*/
 * From : https://www.w3schools.com/css/default.asp
 **************************************************************************************************/
 footer {text-align: center;/* aligns text to the center of the page */
-	font-size: 14pt;
+	font-size: 14pt; color:white;
   padding: 10px; /* adding padding to the content bock */
     background-color: #2c3d7a;
   margin-top: 50px}
@@ -378,7 +378,7 @@ footer {text-align: center;/* aligns text to the center of the page */
 	/*color: white; 
   clear: both;/* clears both sides of the block from floating blocks */
 	/*margin-top:50px}*/
-  footer:after {
+  /* footer:after {
     content: '';
     position: absolute;
     display: block;
@@ -391,12 +391,12 @@ footer {text-align: center;/* aligns text to the center of the page */
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden
-}
+}*/
 
 hr.solid {
   border-top: 3px solid #f7941d;
 }
-p {font-family:Gothom-Book, Arial, sans-serif; color:black;
+p {font-family:Gothom-Book, Arial, sans-serif; 
 	}/* the font family fot the webpagecetury gothic becasue it is sans-serif and easily distinguished */
 .resumeblock{background-color: #2c3d7a ;
   ;margin-left: 20px; margin-right: 20px;}
