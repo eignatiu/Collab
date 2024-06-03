@@ -192,7 +192,7 @@ div.scrollimagegallery img {
 /*Applications page, styling web section (image and text), making responsive*/
 #webSECTION{
 	align-items:center;
-	display:block;
+	display:flex;
 	max-height:1500px;
 	background-color: #8f79f29a;
   border-radius: 10px;
@@ -668,6 +668,41 @@ formating that will apply to tablets or smaller
 		min-width:30%;
 		float: none;	
 	}
+  #storySECTION{
+    display:flex;
+    max-height:700px;
+    width:100%;
+    align-items:center;
+  }
+  
+  #storyINFO{
+    float:left;
+    min-width:30%;
+  }
+  
+  #storyIMAGE{
+    width:70%;
+    height:auto;
+    max-width:785px; 
+    max-height:400px;
+    float:right;
+  }
+	/* #storySECTION{
+		display:block;
+		max-height:1500px; 
+	}
+	
+	#storyIMAGE{
+		max-width:100%;
+		display: block;
+		float: none;
+		margin: auto;
+	}
+ 
+	#storyINFO{
+		min-width:30%;
+		float: none;	
+	} */
 
   /* End Owner:Alanah Reveler */
 
@@ -689,7 +724,42 @@ formating that will apply to tablets or smaller
     margin:auto;
     text-align:left;	
 	}
-
+  #baseSECTION{
+    display:flex;
+    max-height:700px;
+    width:100%;
+    align-items:center;
+  }
+  
+  #baseINFO{
+    float:left;
+    min-width:30%;
+  }
+  
+  #baseIMAGE{
+    width:70%;
+    height:auto;
+    max-width:785px; 
+    max-height:400px;
+    float:right;
+  }
+  /* #BaseSECTION{
+		justify-content:center;
+    display:block; 
+	}
+	
+	#BaseIMAGE{
+    max-width:100%;
+		display:block;
+		float:none;
+	}
+ 
+	#BaseINFO{
+		min-width:30%;
+		float:none;
+    margin:auto;
+    text-align:left;	
+	} */
   /* Jordan's code*/
 	
 /* Julie's Code Starts Here 
