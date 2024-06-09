@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang=en>
     <head>
@@ -49,6 +50,7 @@
         <hr>
         <a href="#GISDatabase" class="buttons">GIS Database</a>
         <a href="#WebDesign" class="buttons">Survey 123</a>
+		<a href="#FieldM" class="buttons">Field Maps</a>
         <a href="#Python" class="buttons">Scripts</a>
         <a href="#basemap" class="buttons">Basemap</a>
         <a href="#storymap" class="buttons">Story Map</a>
@@ -61,62 +63,76 @@
             <h2>And Accomanying Methodology</h2>
         </div>
         <!-- Julie's Code ends here -->
-        <!--Owner:Alanah Reveler-->
+		
+        <!--Owner:Laura Jaimes-->
         
         <h3 id="GISDatabase" class="subh3"> GIS Database </h3>
         
         <div id='databaseSECTION'>
-            <img id='databaseIMAGE' src="imagegallery/databasemodel.JPG" alt="Model of Tree Survey Database">
+            <img id='databaseIMAGE' src="imagegallery/lauradatabase.gif" alt="Data">
             <div id='databaseINFO'>
-                <p>At Odder Solutions we apply principles and techniques of database design and 
-                    processing specializing in a GIS environment. We display strong skills in 
-                    designing, implementing, and managing databases using desktop and mobile devices. 
-                    As well as using Structured Query Language (SQL) to build databases and manipulate
-                     data for future work in data processing, GIS analysis, and cartographic presentation. </p>
-                <p>One database service we offer is designing a survey using Survey123. Our Survey123 services include
-			meeting all your data requirements with data integrity and efficiency and creating an easy-to-use 
-			survey user interface!</p>
-                <p>Another database service we offer is designing a database in Access. Our database 
-                    design service is assembling data from various sources and creating databases. 
-                    The created database will be efficient, with data cohesiveness, and no data lost! </p>
+                <p>The consolidated schema, designed for efficient data management, includes the CKL_TREE_PRIMARY 
+				layer for the tree inventory, the CKL_TREE_REQUEST layer for community tree requests, and the 
+				CKL_TREE_REMOTESENSING layer for trees collected via remote sensing. This schema details field names, 
+				types, sizes, descriptions, domains, and requirements, providing a clear data storage structure.</p>
+				<p><strong>CKL_TREE_PRIMARY</strong><br>
+				Includes the tree inventory with detailed physical and health attributes</p>
+				<p><strong>CKL_TREE_REQUEST</strong><br>
+				manages requests for tree services, and capture detailed information about 
+				the request, its status, and related contact information.</p>
             </div>
         </div>
-        <!--End Owner:Alanah Reveler-->
     		
-    		<h3 id="WebDesign"class="subh3"> Survey 123 </h3>
+		<h3 id="WebDesign"class="subh3"> Survey 123 </h3>
     		
-    <!-- * Owner : Laura Cobham (web design section content)-->
         <div id='webSECTION'>
-	<img id='webIMAGE' src="imagegallery/webcode.png" alt="Screenshot of webpage HTML code">
-	<div id='webINFO'>
-		<p>As part of our commitment to a great customer experience, Odder Solutions recognizes how important a good website is. Whether you are an individual or organization, 
-			we have a skilled team that is experienced in static maps, HTML, CSS, Javascript, and JQuery. These skills allow us to present the best possible image for our customers to the public. </p>
-		<p>We provide one-on-one consultations on what you are looking for on your webpage, then building your code from scratch and offering any revisions in the process. </p>
-		<p>Another one of our web services includes ensuring zero errors or warnings on your webpage so that any visitor to your site can easily find what they are looking for! Your final website will be aesthetically pleasing, error-free, and easy to navigate!</p>
-	</div>
-    </div>
-        <!-- End Owner: Laura Cobham -->
+			<img id='webIMAGE' src="imagegallery/lauraSurvey123Public.gif" alt="Survey123">
+			<div id='webINFO'>
+				<p><strong>Make a request Survey using Survey123 Connect</strong><br>
+				A form using Survey123 Connect was created to collect field data based on the requirements made by the 
+				community through the Urban Tree Data Solution portal. Data collected through the survey is stored directly 
+				in the CKL_TREE_REQUEST data layer in ArcGIS Online</p>
+			</div>
+			<img id='webIMAGE' src="imagegallery/lauraSurvey123Supervisor.gif" alt="survey123">
+			<div>
+				<p><strong>CKL Validation Request Process Survey using Survey123 Connect</strong><br>
+				The supervisor uses this survey to validate the community's requests, confirm if they are authentic, 
+				and move them forward to processing. The supervision requires a friendly interface intended for users 
+				less experienced with GIS. The Validation Request Process Survey allows to edit the Status field for the new requirements.</p>
+			</div>
+		</div>
 
-    <!--
-        * Owner : Jordan Steinman (python section)
-     -->
+		<h3 id="FieldM"class="subh3"> Field Maps </h3>
+
+		<div id='webSECTION'>
+			<img id='webIMAGE' src="imagegallery/lauraFielcrew.gif" alt="fieldmap">
+			<div id='webINFO'>
+				<p><strong>TreeRequestProcessing using using Field Maps</strong><br>
+				The Field Crew populates the attributes of records marked as "in process" by the supervisors and has 
+				access to the Field Maps survey called TreeRequestProcessing, which edits the CKL_REE_REQUEST layer.</p>
+				<p>This survey has the functionality to work offline in areas without internet coverage and geofencing 
+				capabilities that allow the field crew members to get an alert whenever they are outside the perimeter 
+				that corresponds to the Kawartha Lakes boundary</p>
+			</div>
+		</div>
        
-	      <h3 id="Python"class="subh3"> Scripts</h3>
-    		<div id='pythonSECTION'>
-          <img id='pythonIMAGE' src="imagegallery/Python.jpg" alt="Field calculation in ArcGIS Pro using python">
-          <div class='pythonINFO'>
-              <p>Coding with python is around you probably more than is known. It can be used in many different applications,
-                but the main one we specialize in is coding for ArcGIS Pro. 
-              </p>
-              <p>"Coding with python can look daunting, but here at Odder Solutions, we got you covered." - Odder Solutions Team
-              </p>
-              <p>The photo shown is the creation of an expression and query being used to calculate the field called "ValidDate"
-                on the right side. In the expression, there is a combination of splitting the original data, comparing the years
-                in "yearBuilt" and "CompDate", checking if the month has a day that does not exceed its maximum, and an if else
-                statement to check these conditions.
-              </p>
-          </div>
-          
+		<h3 id="Python"class="subh3"> Scripts</h3>
+		<div id='pythonSECTION'>
+			<img id='pythonIMAGE' src="imagegallery/laurascript.gif" alt="python">
+			<div class='pythonINFO'>
+				<p>The need to optimize operations by using programming languages was identified during the development of the Project</p>
+				<p>The sequential process followed to optimize the operations is shown below:</p>
+					<ol>
+						<li>Identification of tasks to automate within the data flow</li>
+						<li>The tasks were performed for an example dummy data in ArcGIS Pro</li>
+						<li>Export the geoprocessing code from ArcGIS Pro to a .py file</li>
+						<li>Determine the scripts orders according to the workflow objectives</li>
+						<li>Script editing for use in the cloud input layers, temporary layers, condition statements and queries</li>
+						<li>Local testing and task scheduling using the windows task scheduler as requested by the client</li>
+					</ol>
+			</div>
+		<!-- End Owner: Laura Jaimes -->
+				
         </div>
         <h3 id="basemap"class="subh3"> Basemap</h3>
         <div id="BaseSECTION">
