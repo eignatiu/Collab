@@ -13,7 +13,10 @@
         <!--*Owner:Alanah Reveler-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--icon for navbar button-->
         <script src="script.js"></script> <!--Link to javascript-->
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+    
+      </head>
     <body>
       <div class="whole">
 	 <!--Owner End:Alanah Reveler-->
@@ -52,6 +55,8 @@
 	<a href="#SpatialAnalysis" class="buttons">Main Solution</a>
 	<a href="#Geovisualization" class="buttons">Limitations</a>
   <a href="#objective3"class= "buttons">Proof of Concept</a>
+  <a href="#TreeViewer" class="buttons">Tree Viewer</a>
+  <a href="#Demo" class="buttons">Workflow Demo</a>
   
 	<hr>
 	<!-- End Owner: Laura Cobham --> 
@@ -95,10 +100,14 @@
             <div>
               <p>This is where the work emmanuel will go proving the concet of tree popint capturing</p>
             </div>   
-            
+            <div class="subhead">
+              <h3 id="TreeViewer" class="subh3">Tree Viewer</h3>
+              <p>This is the Public tree view, including the data from the client giving the team a starting point for future work </p>
+              <div id="viewDiv"></div>
+          </div>
             <div>
             <div class="subhead">
-              <h3>Workflow Overview</h3>
+              <h3 id="Demo" class="subh3">Workflow Overview</h3>
               <p>Watch the video below to understand our workflow process.</p>
               <div style="text-align:center;">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/lRGeFtKV-C0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -134,5 +143,7 @@
     <!-- ***End Owner : Alison Cooke*** -->
     </footer>
       </div>
+      <script src="https://js.arcgis.com/4.28/"></script>
+      <script src="script.js"></script>
     </body>
 </html>

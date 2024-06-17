@@ -12,8 +12,7 @@
      
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icon for navbar button-->
         <script src="script.js"></script>  <!--Link to javascript-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+      
         
     </head>
 
@@ -48,10 +47,7 @@
             <h2>For the City of Kawartha Lakes</h2>
         </div>
 
-        <div class="subhead">
-          <h3>Tree Viewer</h3>
-          <div id="viewDiv"></div>
-      </div>
+   
         
         <div class="subhead">
     		<h3> Our Goal </h3>
@@ -165,122 +161,8 @@
           
     </footer>
     </div>
-    <script src="https://js.arcgis.com/4.28/"></script>
-    <script src="script.js"></script>
+  
   </body>
 
     
 </html>
-
-
-<!--Beginning of Lauras Code for the map that i cant figure out how it works-->
-
-
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Branch-In - Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icon for navbar button
-        <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Styling.css">
-    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
-</head>
-<body>
-  
-    <div class="whole">
-        <!-- <div class="navbar" id="myTopnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="Workflow.html">Workflow</a>
-            <a href="Supervisor.html">Supervisor</a>
-            <a href="FieldCrew.html">Field Crew</a>
-            <a href="javascript:void(0);" class="icon" onclick="Navbar()" aria-label="Open menu">
-                <i class="fa fa-bars"></i>
-            </a> 
-            <div class="navbar" id="myTopnav">
-              <a href="index.html">Home</a>
-              <a class="active" href="secondpage.html">Meet The Team</a>
-              <div class="dropdown">
-                <button class="dropbtn">What We've Done
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="thirdpage.html">Objective and Solution</a>
-                  <a href="fourthpage.html">Academic Deliverables</a>
-                </div>
-              </div> 
-              <!--<a href="fifthpage.html">Methodology</a>
-        </div>
-        
-        <div id="heading">
-            <h1>Urban Tree Data Solution</h1>
-            <h2>For the City of Kawartha Lakes</h2>
-        </div>
-        
-        <div class="subhead">
-            <h3>Tree Viewer</h3>
-            <div id="viewDiv"></div>
-        </div>
-        
-        <div class="subhead">
-            <h3>Submit Your Request</h3>
-            <p>We encourage the community to report any tree-related issues to help us maintain the quality of the city's tree management. Your feedback is crucial in ensuring our urban forests remain healthy and vibrant.</p>
-            <p style="text-align: center">
-                <a href="https://survey123.arcgis.com/share/e5fdbce1a0874477b2ae0dee204168e5?portalUrl=https://Fleming.maps.arcgis.com" target="_blank">Make a Request!</a>
-            </p>
-        </div>
-
-        <div class="subhead">
-            <h3>Urban Tree of Kawartha Lakes</h3>
-            <p>Branch - In and make Kawartha Lakes greener!</p>
-            <div class="scrollimagegallery">
-                <img src="imagegallery/tree1.png" alt="Branch - In and make Kawartha lakes greener!">
-                <img src="imagegallery/tree2.png" alt="Branch - In and make Kawartha lakes greener!">
-                <img src="imagegallery/tree3.png" alt="Branch - In and make Kawartha lakes greener!">
-                <img src="imagegallery/tree4.png" alt="Branch - In and make Kawartha lakes greener!">
-                <img src="imagegallery/tree5.png" alt="Branch - In and make Kawartha lakes greener!">
-            </div>
-        </div>
-        
-        <div>
-            <button onclick="topFunction()" id="topbutton" class="hide" title="Top">Top</button>
-        </div>
-        
-        <footer>
-            <p>Address: 456 Sesame Street, Hairy Hills AB,T0B 1S0</p>
-            <p>Call us at 867-5309</p>
-            <p>
-                <a class="contactbut" href="./fifthpage.html">Contact us here</a>
-            </p>
-            <p>TM & Copywrite 2023 Odder Solutions. All Rights Reserved.</p>
-        </footer>
-    </div>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/WebMap.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/views/MapView.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/ScaleBar.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/Legend.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/properties/defaultUnit.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/ScaleBar/css.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/ScaleBar/ScaleBarViewModel.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/support/globalCss.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/support/getDefaultUnitForView.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/geometry/support/geodesicUtils.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/views/2d/webglDeps.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/views/2d/mapViewDeps.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/layers/VectorTileLayer.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/portal/support/layersLoader.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/views/2d/layers/FeatureLayerView2D.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/views/2d/layers/VectorTileLayerView2D.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/layers/support/fetchService.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/support/arcadeUtils.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://js.arcgis.com/4.28/esri/symbols/support/previewSymbol2D.js"></script>
-    <script type="moduel" charset="utf-8" src="https://js.arcgis.com/4.28/esri/widgets/Popup.js"></script>
-    <script src="https://js.arcgis.com/4.28/"></script>
-    <script src="script.js"></script>
-
-   
-</body>
-</html>
-
