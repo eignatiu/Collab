@@ -21,7 +21,7 @@
       font-family: "Century Gothic"; 
       color: white;
       font-style:italic}
-       h4{font-size: 20;}/* text-align: center} */
+       h4{font-size: 30;}/* text-align: center} */
     body {background-color: rgb(255, 255, 255);
       /*margin-top:50px;
       margin-bottom: 40px;
@@ -30,12 +30,13 @@
     p {/*color: rgb(35, 33, 33);*/ 
       font-weight: bold;
       padding:  0px  20px  0px}
+      ol{font-weight: bold;}
     .subhead{margin: auto; 
       background-color: white;
       /* width: 1200px; */
       /*border-radius: 10px;*/
       padding: 40px; 
-    margin: 50px;
+    margin: 50px; margin-left: 150px; margin-right:150px;
     border-width: 1px;
     border-style: solid }
     .subhead2{margin: auto; 
@@ -46,7 +47,7 @@
     margin-top: 100px;
   margin-bottom: 40px}
 /*Images New*/
-.logo {float:right; padding-left:30px}
+.logo {float:right; padding-left:30px;  margin:40px; margin-bottom: 80px}
 /* id selectors */
     #heading { background-color: #2c3d7a
 
@@ -394,7 +395,7 @@ footer {text-align: center;/* aligns text to the center of the page */
 }*/
 
 hr.solid {
-  border-top: 3px solid #f7941d;
+  border-top: 3px solid #f7941d;margin-left: 100px;margin-right: 100px;
 }
 p {font-family:Gothom-Book, Arial, sans-serif; 
 	}/* the font family fot the webpagecetury gothic becasue it is sans-serif and easily distinguished */

@@ -68,19 +68,32 @@
             <h2>A Breakdown of our solution and a Demo</h2>
         </div>
         
-    		<h3 id="SpatialAnalysis" class="subh3"> Branch-In Urban Tree Asset Solution </h3> 
+    		<h3 id="SpatialAnalysis" class="subh3"> Main Solution </h3> 
         
             <div class="cartsection" >  <!--Create div to contain all relevant information-->
-              <img class= "cartimg" src= "imagegallery/SpatialExampleJM.JPG"  alt="Spatial Analysis of Amenities in Thunder Bay Ontario">
+              <img class= "cartimg" src= "imagegallery/SpatialExampleJM.JPG"  alt="Image of surveys">
               <div class="carttext"><h3 class="subh3"> </h3> 
                 <!-- <ul class="spatialList"> 
                   <li> Site Suitability analysis </li> 
                   <li> Environmental assessments for building proposals</li> 
                   <li> Mapping global pandemics.</li> 
                 </ul>  -->
-                <p>This is where we would add the solution and give a break down of its main parks a quick over view of how it works, along with an image of 
-                  the solution with som context.
+                <p>We have created a series of surveys, public, field crew and supervisor validation surveys all in unison to create a request and maintenance workflow. 
+                  This begins with a request being received from the public. This creates a data point and basic request information. This request then gets processed by the supervisor and updated onto a field crew map layer showing the tree point indicating there is to be work done to the tree. 
+                  From there the field crew/arborists are to look at the tree to determine its conditions and next steps for maintenance. Uniting another survey which finally gets update once more creating a centralized tree inventory with the public requests being processed by supervisor and field crew. 
+                  
                 </p>
+                <h4>List of deliverables:</h4>
+                <ol>
+                  <li>Database structure</li>
+                  <li>Layer with remote sensed tree points</li>
+                  <li>Survey 123 for public requests</li>
+                  <li>Survey 123 for supervisor validation</li>
+                  <li>Field Maps for arborist processing</li>
+                  <li>Dashboard</li>
+                  <li>Story map</li> 
+                  <li>User manual for client </li> 	
+                  </ol>
               </div>
             </div>
             <div></div>    <!-- Div stops the components from overlapping -->
@@ -91,10 +104,12 @@
     		<h3 id="Geovisualization" class="subh3"> Limitations to our Solution </h3>
           
             <div class="cartsection">
-            <img class= "cartimg" src= "imagegallery/GVITF2GreyscaleMap2.jpg" alt="example of Geovisualization">
+            <img class= "cartimg" src= "imagegallery/GVITF2GreyscaleMap2.jpg" alt="Image of basemap">
             <div class="carttext">
-              <p>This is where we need to put the limitations to our solution not in great detail but in enough that there is an
-                understanding of the use case for our solution. </p></div>
+              <h4>Some Limitations Include</h4>
+            <ul><li>Needs to be adaptable for offline use using the basemap</li>
+            <li>Basemap is inaccurate to a degree because of the quality of parcel and building data</li>
+            </ul></div>
             </div>
             <h3 id="objective3" class="subh3"> Proof of Concept </h3>
             <div>
@@ -102,7 +117,7 @@
             </div>   
             <div class="subhead">
               <h3 id="TreeViewer" class="subh3">Tree Viewer</h3>
-              <p>This is the Public tree view, including the data from the client giving the team a starting point for future work </p>
+              <p>This is the Public tree view, including the data from the client giving the team a starting point for future work. </p>
               <div id="viewDiv"></div>
           </div>
             <div>
