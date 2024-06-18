@@ -85,6 +85,7 @@
                 </p>
                 <h4>List of deliverables:</h4>
                 <ol>
+		  <li>Tree locations</li>
                   <li>Database structure</li>
                   <li>Layer with remote sensed tree points</li>
                   <li>Custom Basemap. (Link <a href='https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=9a9e6e0b6ea247e3b729f7206c717a6d'target='_blank'>here)</a></li>
@@ -110,6 +111,8 @@
               <h4>Some Limitations Include</h4>
             <ul><li>Filed Maps need to be adaptable for offline use using the basemap</li>
             <li>Basemap is inaccurate to a degree because of the quality of parcel and building data</li>
+	    <li>Some objects could be misinterpreted as trees</li>
+	    <li>Detecting objects from imagery is a time consuming and system-intensive process that may require multiple iterations</li>
             </ul></div>
             </div>
             
@@ -124,11 +127,11 @@
           <h3 id="objective3" class="subh3"> Remote Sensing </h3>
           
             <div class="cartsection">
-            <img class= "cartimg" src= "imagegallery/limit.JPG" alt="Image of basemap">
+            <img class= "cartimg" src= "imagegallery/trees.gif" alt="Image of trees extracted from Aerial Imagery">
             <div class="carttext">
               <h4>Some Limitations Include</h4>
-            <ul><li>Filed Maps need to be adaptable for offline use using the basemap</li>
-            <li>Basemap is inaccurate to a degree because of the quality of parcel and building data</li>
+            <ul>High resolution (0.15m X 0.15m) multiband aerial imagery can be used effectively to detect objects using deep learning pretrained models in ArcGIS Pro. 
+		    The images here show the imagery provided, tree objects detected, building objects detected and car objects detected in the same order.
             </ul></div>
             </div>
 
