@@ -2,24 +2,21 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-      <meta name="description" content="Odder Solutions Consultation Website">
-      <meta name="Keywords"  content="GIS, Accessability, CSS, HTML, GEOM 107">
-      <meta name="Author" contents="Alison Cooke">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--https://www.w3schools.com/html/html_responsive.asp-->
+      <meta name="description" content="GIS Collaborative Project - Urban Tree Data Solutions">
+      <meta name="Keywords"  content="GIS, Accessability, CSS, HTML, APST 62">
+      <meta name="Author" contents="Alison Cooke, Laura Jaimes, Emmanuel Ignatius">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--https://www.w3schools.com/html/html_responsive.asp-->
         <!--Starting to try and figure out responsive websites-->
     
         <meta charset=utf-8>
         <link rel="stylesheet" href="Styling.css"> <!--Link to stylesheet-->
         <title> Branch-In Academic Deliverables</title>
-        <!-- Julie's Code ends here -->
-        <!--Owner: Alanah Reveler-->
+  
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icon for navbar button-->
         <script src="script.js"></script>  <!--Link to javascript-->
-        <!--End Owner:Alanah Reveler-->
-     <!--
-        * Owner : Laura Cobham (navbar links to different pages)
-        * From : https://www.w3schools.com/colors/colors_palettes.asp
-     -->
+
+     <!--From : https://www.w3schools.com/colors/colors_palettes.asp-->
     </head>
     <body>
 	    <div class="whole">
@@ -36,34 +33,42 @@
 	    </div>
 	  </div> 
 	 <!-- <a href="fifthpage.html">Methodology</a>-->
-	<!-- End Owner: Laura Cobham -->
-	<!--Owner:Alanah Reveler-->
+
         <!--Inspired from:https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
         <a href="javascript:void(0);" class="icon" onclick="Navbar()" aria-label="Open menu">
         <i class="fa fa-bars"></i></a>
 	</div>
-        <!--End Owner:Alanah Reveler-->
 
-        <!--
-        * Owner : Jordan Steinman (section buttons)
-        -->
         <hr>
+        <a href="#TreeLocations" class="buttons">Tree Locations</a>
         <a href="#GISDatabase" class="buttons">GIS Database</a>
         <a href="#WebDesign" class="buttons">Survey 123</a>
-		<a href="#FieldM" class="buttons">Field Maps</a>
+		    <a href="#FieldM" class="buttons">Field Maps</a>
         <a href="#Python" class="buttons">Scripts</a>
         <a href="#basemap" class="buttons">Basemap</a>
         <a href="#storymap" class="buttons">Story Map</a>
         <a href="#dashboard" class="buttons">Dashboard</a>
         <hr>
-        <!-- End Owner: Jordan Steinman -->
-        <!--Julie's code starts here -->
+
         <div id=heading> 
             <h1>Deliverables</h1>
             <h2>And Accomanying Methodology</h2>
         </div>
-        <!-- Julie's Code ends here -->
-		
+        <!--Owner:Emmanuel Ignatius-->
+        <hr class="solid">
+        <h3 id="TreeLocations" class="subh3"> Tree Locations </h3>
+        
+        <div id='TreeLocations'>
+            <img src="imagegallery/Confidence1.jpg" alt="Data" style="max-width: 100%; height: auto;">
+            <img src="imagegallery/Confidence1_pie.jpg" alt="Data" style="max-width: 100%; height: auto;">
+            <div id='TreeLocMethodology'>
+                <p>For the purpose of maintenance, the City of Kawartha Lakes requires the locations of individual
+                  tree, to identify and attend to its needs. Using the tree detection pre-trained ArcGIS model, 
+                  individual trees were identified. 
+                </p>
+            </div>
+        </div>
+
         <!--Owner:Laura Jaimes-->
         <hr class="solid">
         <h3 id="GISDatabase" class="subh3"> GIS Database </h3>
@@ -72,19 +77,20 @@
             <img src="imagegallery/lauradatabase.gif" alt="Data" style="max-width: 100%; height: auto;">
             <div id='databaseINFO'>
                 <p>The consolidated schema, designed for efficient data management, includes the CKL_TREE_PRIMARY 
-				layer for the tree inventory, the CKL_TREE_REQUEST layer for community tree requests, and the 
-				CKL_TREE_REMOTESENSING layer for trees collected via remote sensing. This schema details field names, 
-				types, sizes, descriptions, domains, and requirements, providing a clear data storage structure.</p>
-				<p><strong>CKL_TREE_PRIMARY</strong><br>
-				Includes the tree inventory with detailed physical and health attributes</p>
-				<p><strong>CKL_TREE_REQUEST</strong><br>
-				manages requests for tree services, and capture detailed information about 
-				the request, its status, and related contact information.</p>
+                layer for the tree inventory, the CKL_TREE_REQUEST layer for community tree requests, and the 
+                CKL_TREE_REMOTESENSING layer for trees collected via remote sensing. This schema details field names, 
+                types, sizes, descriptions, domains, and requirements, providing a clear data storage structure.</p>
+                <p><strong>CKL_TREE_PRIMARY</strong><br>
+                Includes the tree inventory with detailed physical and health attributes</p>
+                <p><strong>CKL_TREE_REQUEST</strong><br>
+                manages requests for tree services, and capture detailed information about 
+                the request, its status, and related contact information.</p>
             </div>
         </div>
+
         <hr class="solid">	
-		<h3 id="WebDesign"class="subh3"> Survey 123 </h3>
-    		
+
+		    <h3 id="WebDesign"class="subh3"> Survey 123 </h3>
         <div id='webSECTION'>
 			<img src="imagegallery/lauraSurvey123Public.gif" alt="Survey123" style="max-width: 35%; height: auto;">
 			<div id='webINFO'>
@@ -224,17 +230,14 @@
             <p>Click <a href="https://fleming.maps.arcgis.com/apps/dashboards/cb84b49bed714bc883e191857af48d22" target="_blank">here</a> for link to Dashboard</p>
              </div>
 
-
-    	<!-- End Owner: Jordan Steinman -->
     <!--
-	*Owner: Alanah Reveler
 	*HTML for back-to-top button
 	*https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
      -->
      <div>
         <button onclick="topFunction()" id="topbutton" class="hide" title="Top">Top</button>
      </div> 
-     <!--End Owner:Alanah Reveler-->  
+
      <!--
     - Owner : Alison Cooke
     - From : https://www.w3schools.com/tags/tag_footer.asp
@@ -243,7 +246,6 @@
         
         <p> 
           200 Albert St S, Lindsay, ON K9V 5E6
-
         </p>
         
         <p>  
