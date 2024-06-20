@@ -9,7 +9,7 @@
     #f1e3dd  - pinky beige
 
 /*Website wide formating*/
-    * {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;}
+    * {font-family: Gothic-Book,Arial,sans-serif ;}
 
 /* Element specific formating */
     h1 {font-size: 60px;
@@ -18,7 +18,7 @@
       text-transform: uppercase;
       letter-spacing: 5px;}
     h2 {text-align: center; 
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+      font-family:  Gothic-Book,Arial,sans-serif; 
       color: white;
       font-style:italic}
        h4{font-size: 30;}/* text-align: center} */
@@ -165,7 +165,7 @@ div.scrollimagegallery img {
 }
 /* Table styling learned from: https://www.w3schools.com/css/css_table.asp */
 #services {
-  font-family: Century Gothic;
+  font-family: Gothic-Book,Arial,sans-serif;
   
   width: 100%;
 }
@@ -403,7 +403,7 @@ footer {text-align: center;/* aligns text to the center of the page */
 hr.solid {
   border-top: 3px solid #f7941d;margin-left: 100px;margin-right: 100px;margin-top: 50px;
 }
-p {font-family:Gothom-Book, Arial, sans-serif; 
+p {font-family:Gothic-Book,Arial,sans-serif; 
 	}/* the font family fot the webpagecetury gothic becasue it is sans-serif and easily distinguished */
 .resumeblock{background-color: #2c3d7a ;
   ;margin-left: 20px; margin-right: 20px;}
@@ -478,7 +478,7 @@ color:rgb(56, 53, 53)}
 color: rgb(35, 33, 33); /* added an image caption to indicate the user can click on the image */
 font-size:14px;
 font-weight: bold;
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, CenturyGothic, AppleGothic, sans-serif;
+font-family: Gothic-Book,Arial,sans-serif, CenturyGothic, AppleGothic, sans-serif;
 padding-top: 20px;
 }
 
@@ -486,7 +486,7 @@ padding-top: 20px;
   color: rgb(35, 33, 33); /* added an image caption to indicate the user can click on the image */
   font-size:14px;
   font-weight: bold;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, CenturyGothic, AppleGothic, sans-serif;
+  font-family: Gothic-Book,Arial,sans-serif, CenturyGothic, AppleGothic, sans-serif;
   padding-top: 20px;
   }
 
