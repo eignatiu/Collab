@@ -1,4 +1,5 @@
 
+
 * {font-family: Gothic-Book,Arial,sans-serif ;}
 
 /* Element specific formating */
@@ -544,7 +545,8 @@ font-weight: bold }
 @media (max-width: 600px) {   
 	/*From:https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
 
-  .navbar a:not(:first-child), .dropdown .dropbtn {display: none;}
+
+    .navbar a:not(:first-child), .dropdown .dropbtn {display: none;}
 	.navbar a.icon {
 	  float: right;
 	  display: block;
@@ -568,6 +570,7 @@ font-weight: bold }
 	    width: 100%;
 	    text-align: left;
 	}
+    .subhead {display:flex; width:auto}
  	/*Styling to make the data service section responsive*/
 	#databaseSECTION{
 		display:block;
