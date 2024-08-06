@@ -570,6 +570,9 @@ font-weight: bold }
 	    width: 100%;
 	    text-align: left;
 	}
+  .whole{display:contents;
+    width:100%;}
+
     .subhead {display:contents;
        width:100%;}
  	/*Styling to make the data service section responsive*/
