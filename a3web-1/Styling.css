@@ -570,7 +570,8 @@ font-weight: bold }
 	    width: 100%;
 	    text-align: left;
 	}
-    .subhead {display: block; width:100%;}
+    .subhead {display:contents;
+       width:70%;}
  	/*Styling to make the data service section responsive*/
 	#databaseSECTION{
 		display:block;
