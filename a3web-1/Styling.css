@@ -568,10 +568,10 @@ font-weight: bold }
 	.navbar.responsive .dropdown .dropbtn {
 	    display: block;
 	    width: 100%;
-	    text-align: left;
+	    text-align: center;
 	}
 	.logo{height: auto;
-	       width: 550px;
+	       width: 500px;
 	     align-items: center;}
   .study{height: auto;
     width:600px;}
