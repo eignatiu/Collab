@@ -728,8 +728,7 @@ font-weight: bold }
   #storyIMAGE{
     width:70%;
     height:auto;
-    max-width:785px; 
-    max-height:400px;
+    max-width:350px;
     float:right;
   }
   #pythonSECTION{
@@ -764,8 +763,7 @@ font-weight: bold }
   #baseIMAGE{
     width:70%;
     height:auto;
-    max-width:785px; 
-    max-height:400px;
+    max-width:350px;
     float:right;
   }
  
