@@ -1,5 +1,6 @@
 
 
+
 * {font-family: Gothic-Book,Arial,sans-serif ;}
 
 /* Element specific formating */
@@ -657,6 +658,121 @@ font-weight: bold }
 
 }
 
+@media (max-width: 350px) {   
+	/*From:https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp*/
+
+
+    .navbar a:not(:first-child), .dropdown .dropbtn {display: none;}
+	.navbar a.icon {
+	  float: center;
+	  display: block;
+	}
+
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.navbar.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: center;
+	}
+	.navbar.responsive .dropdown {float: none;}
+	.navbar.responsive .dropdown-content {position: relative;}
+	.navbar.responsive .dropdown .dropbtn {
+	    display: block;
+	    width: 100%;
+	    text-align: center;
+	}
+	.logo{height: auto;
+	       width: 300px;
+	     align-items: center;}
+  .study{height: auto;
+    width: 350px;}
+  .whole{display:contents;
+    width:100%;}
+
+    .subhead {display:contents;
+       width:100%;}
+ 	/*Styling to make the data service section responsive*/
+	#databaseSECTION{
+		display:block;
+		max-height:1500px; 
+	}
+	
+	#databaseIMAGE{
+		max-width:100%;
+		display: block;
+		float: none;
+		margin: auto;
+	}
+ 
+	#databaseINFO{
+		min-width:30%;
+		float: none;	
+	}
+  #storySECTION{
+    display:flex;
+    max-height:700px;
+    width:100%;
+    align-items:center;
+  }
+  
+  #storyINFO{
+    float:left;
+    min-width:30%;
+  }
+  
+  #storyIMAGE{
+    width:70%;
+    height:auto;
+    max-width:785px; 
+    max-height:400px;
+    float:right;
+  }
+  #pythonSECTION{
+		justify-content:center;
+    display:block; 
+	}
+	
+	#pythonIMAGE{
+    max-width:100%;
+		display:block;
+		float:none;
+	}
+ 
+	#pythonINFO{
+		min-width:30%;
+		float:none;
+    margin:auto;
+    text-align:left;	
+	}
+  #baseSECTION{
+    display:flex;
+    max-height:700px;
+    width:100%;
+    align-items:center;
+  }
+  
+  #baseINFO{
+    float:left;
+    min-width:30%;
+  }
+  
+  #baseIMAGE{
+    width:70%;
+    height:auto;
+    max-width:785px; 
+    max-height:400px;
+    float:right;
+  }
+ 
+    .staticMap {max-width: 100%; padding-left: 5px }
+
+}
+
 @media screen and (max-width: 600px){    /*Formating that applys to Cellphones - Breaks sourced from https://www.optimonk.com/above-the-fold/ Julie */
 
     #OSMap {width:100%; display: flex;    /*OSMap on fifthpage.html, changes to the display text box under the image on a small screen*/
@@ -672,3 +788,4 @@ font-weight: bold }
 
   .cartimg {width: 100%; height: auto; float: none; padding: 5px 5px 5px 5px}
 }
+
